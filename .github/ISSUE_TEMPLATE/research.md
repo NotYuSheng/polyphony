@@ -2,7 +2,7 @@
 name: Research Task
 about: Research or investigate a topic before implementation
 title: "[Research] "
-labels: Research
+labels: research
 assignees: ''
 ---
 

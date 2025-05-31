@@ -1,8 +1,8 @@
 ---
 name: Feature Request
-about: A user-facing functionality or service
+about: A brand new piece of user-facing functionality.
 title: "[Feature] "
-labels: Feature
+labels: feature
 assignees: ''
 ---
 
