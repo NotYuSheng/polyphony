@@ -1,8 +1,8 @@
 ---
-name: Technical Task
-about: Internal or non-user-facing engineering work
-title: "[Tech] "
-labels: Enhancement
+name: Enhancement
+about: An improvement or technical upgrade to existing functionality, infra, or tooling
+title: "[Enhancement] "
+labels: enhancement
 assignees: ''
 ---
 
