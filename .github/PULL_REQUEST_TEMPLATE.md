@@ -5,7 +5,9 @@ Title: <Brief, descriptive title for the PR indicating if it's a new feature, a 
 
 ## Related Issue(s)
 <Provide any links to the related issues.>
-#12 #73
+- #12 
+- #73 
+
 ## Description of Changes
 <Give a detailed description of the changes.>
 
@@ -22,10 +24,10 @@ Title: <Brief, descriptive title for the PR indicating if it's a new feature, a 
 <Use @mention to involve specific individuals or teams in the discussion and explain why.>
 
 ## Checklist
-- [] Unit tests written.
-- [] Feature or bug is completed.
-- [] Code is readable, comments and doc string written.
-- [] Code style follows PEP 8 conventions.
-- [] Built and tested on Docker.
-- [] Updated `requirements.txt`.
-- [] Conflicts with base branch resolved.
+- [ ] Unit tests written.
+- [ ] Feature or bug is completed.
+- [ ] Code is readable, comments and doc string written.
+- [ ] Code style follows PEP 8 conventions.
+- [ ] Built and tested on Docker.
+- [ ] Updated `requirements.txt`.
+- [ ] Conflicts with base branch resolved.
