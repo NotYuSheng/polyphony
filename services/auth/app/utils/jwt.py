@@ -3,7 +3,9 @@ from datetime import datetime, timedelta
 from jose import JWTError, jwt
 
 # Load from environment variables
-JWT_SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
+if not JWT_SECRET_KEY:
+    raise ValueError("JWT_SECRET_KEY environment variable not set")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 JWT_ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("JWT_ACCESS_TOKEN_EXPIRE_MINUTES", 30))
 
