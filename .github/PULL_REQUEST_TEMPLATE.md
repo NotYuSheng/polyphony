@@ -1,5 +1,3 @@
-Title: <Brief, descriptive title for the PR indicating if it's a new feature, a simplification, a fix, etc.>
-
 ## Purpose
 <State the purpose of the Pull Request and provide an overview of why the work is taking place.>
 
