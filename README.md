@@ -9,34 +9,37 @@ The project structure is as follows:
 ```shell
 .  
 polyphony/
-├── services/                      # All microservices
-│   ├── auth/                      # Auth service (FastAPI)
-│   ├── converter/                 # Converter service
-│   └── ...                        # Future services
+├── services/                         # All backend microservices
+│   ├── auth/                         # Auth service (FastAPI)
+│   ├── converter/                    # Converter service
+│   └── ...                           # Future services
 │
-├── frontend/                      # Unified UI (e.g., React or Streamlit)
-│   └── dashboard/                 # Dashboard or web interface
+├── frontend/                         # Unified UI (e.g., React or Streamlit)
+│   └── dashboard/                    # Dashboard or web interface
 │
-├── infrastructure/               # Infrastructure-level services
-│   ├── nginx/                    # Reverse proxy
-│   ├── kafka/                    # Kafka broker + zookeeper
-│   ├── postgres/                 # Database + init scripts
-│   └── ...                       # Any additional infra (e.g., redis)
+├── infrastructure/                  # Core infrastructure components
+│   ├── nginx/                       # Nginx reverse proxy config
+│   ├── kafka/                       # Kafka broker and Zookeeper
+│   └── ...                          # Other infra (e.g., Redis, MinIO)
 │
-├── shared/                       # Shared code or base packages
-│   ├── utils/                    # Shared Python utilities
-│   ├── models/                   # Shared data models/schemas
-│   └── ...                      
+├── shared/                          # Shared libraries and code
+│   ├── utils/                       # Common utility functions
+│   ├── models/                      # Shared Pydantic or SQLAlchemy models
+│   └── ...                          # Additional shared components
 │
-├── deploy/                       # Docker Compose & K8s deployment files
-│   ├── docker-compose.yml        # Top-level orchestrator
-│   ├── .env                      # Global environment variables
-│   └── k8s/                      # Optional: Kubernetes manifests
+├── deploy/                          # Deployment configurations
+│   ├── docker-compose.yml           # Main orchestrator for local dev
+│   ├── docker-compose.override.yml  # Overrides for development (volumes, ports)
+│   ├── .env                         # Global environment variables
+│   └── helm/                        # Helm charts for Kubernetes/OpenShift
 │
-├── docs/                         # System diagrams, architecture, README
-├── scripts/                      # Shell scripts for dev tools, CI
-├── Makefile                      # Optional task runner
-└── README.md
+├── docs/                            # Documentation and architecture
+│   ├── diagrams/                    # System and C4 diagrams
+│   └── ...                          # Design decisions, ADRs, etc.
+│
+├── scripts/                         # Utility scripts (e.g., setup, test)
+├── Makefile                         # Common developer tasks and automation
+└── README.md                        # Project overview and usage
 ```
 
 ---
