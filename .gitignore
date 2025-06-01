@@ -1,0 +1,67 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+*.db
+.Python
+.env
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+
+# --- Docker ---
+*.pid
+*.seed
+docker-compose.override.yml
+.env.docker
+
+# --- Node.js / React / Frontend ---
+node_modules/
+*.log
+dist/
+build/
+.cache/
+.vite/
+.env.local
+.env.development
+.env.production
+
+# --- VS Code ---
+.vscode/
+
+# --- Kubernetes ---
+*.yaml~
+*.yml~
+k8s/*.bak
+k8s/tmp/
+
+# --- General ---
+*.swp
+*.bak
+.DS_Store
+.idea/
+*.iml
+*.orig
+*.tmp
+*.swo
+
+# --- Ignore compiled files ---
+*.so
+*.o
+*.out
+*.class
+
+# --- Ignore OS metadata ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore only personal overrides
+docker-compose.override.yml
