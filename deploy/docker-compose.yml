@@ -1,0 +1,24 @@
+services:
+  poly-auth:
+    container_name: poly-auth
+    build:
+      context: ../services/auth
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../services/auth/app:/app/app
+    env_file:
+      - ../services/auth/.env
+    depends_on:
+      - poly-postgres-auth
+
+  poly-postgres-auth:
+    image: postgres:17.5
+    container_name: poly-postgres-auth
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    env_file:
+      - ../services/auth/.env
+    volumes:
+      - ../services/auth/postgres-data:/var/lib/postgresql/data
